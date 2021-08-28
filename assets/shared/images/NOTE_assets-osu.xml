@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NOTE_assets-osu.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrowDOWN0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="arrowLEFT0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="arrowRIGHT0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="arrowUP0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="blue alone0000" x="174" y="10" width="155" height="53"/>
+	<SubTexture name="blue hold0000" x="339" y="10" width="50" height="44"/>
+	<SubTexture name="blue tail0000" x="338" y="73" width="50" height="64"/>
+	<SubTexture name="down confirm0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="down press0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="green alone0000" x="174" y="73" width="154" height="53"/>
+	<SubTexture name="green hold0000" x="339" y="10" width="50" height="44"/>
+	<SubTexture name="green tail0000" x="338" y="73" width="50" height="64"/>
+	<SubTexture name="left confirm0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="left press0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="purple alone0000" x="10" y="74" width="154" height="53"/>
+	<SubTexture name="purple hold0000" x="339" y="10" width="50" height="44"/>
+	<SubTexture name="purple tail0000" x="338" y="73" width="50" height="64"/>
+	<SubTexture name="red alone0000" x="10" y="10" width="154" height="54"/>
+	<SubTexture name="red hold0000" x="339" y="10" width="50" height="44"/>
+	<SubTexture name="red tail0000" x="338" y="73" width="50" height="64"/>
+	<SubTexture name="right confirm0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="right press0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="up confirm0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="up press0000" x="10" y="10" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+</TextureAtlas>

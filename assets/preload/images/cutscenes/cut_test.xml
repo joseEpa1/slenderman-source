@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cut_test.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="one0000" x="1326" y="10" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0001" x="1326" y="740" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0002" x="2610" y="1470" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0003" x="2616" y="10" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0004" x="10" y="10" width="1306" height="720" frameX="0" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0005" x="10" y="1470" width="1290" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0006" x="2616" y="740" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0007" x="3900" y="1470" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="one0008" x="3906" y="10" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0000" x="3906" y="740" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0001" x="5190" y="1470" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0002" x="5196" y="10" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0003" x="5196" y="740" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0004" x="10" y="740" width="1306" height="720" frameX="0" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0005" x="1310" y="1470" width="1290" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0006" x="6480" y="1470" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0007" x="6486" y="10" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+	<SubTexture name="two0008" x="6486" y="740" width="1280" height="720" frameX="-26" frameY="0" frameWidth="1316" frameHeight="720"/>
+</TextureAtlas>
