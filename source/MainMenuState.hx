@@ -171,7 +171,7 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 
-		if (TitleState.isGitHubNew != '0.0.1\n' && FlxG.save.data.gitWarning == true)
+		if (TitleState.isGitHubNew != '0.0.2\n' && FlxG.save.data.gitWarning == true)
 		{
 			var githubWarn:FlxSprite = new FlxSprite(-360, 536).loadGraphic(Paths.image('github-warning'));
 			githubWarn.antialiasing = true;
