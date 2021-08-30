@@ -584,10 +584,15 @@ class PlayState extends MusicBeatState
 				case 'woods':
 					{
 						curStage = 'woods';
-						defaultCamZoom = 0.9999;
-						var BG : FlxSprite = new FlxSprite(-210, 0).loadGraphic(Paths.image('woods'));
+						defaultCamZoom = 1;
+						var FG : FlxSprite = new FlxSprite(-210, 0).loadGraphic(Paths.image('woods-layer1'));
+						var BG : FlxSprite = new FlxSprite(-210, 0).loadGraphic(Paths.image('woods-layer2'));
+						BG.screenCenter();
+						BG.scrollFactor.set();
+						FG.antialiasing = true;
 						BG.antialiasing = true;
 						add(BG);
+						add(FG);
 					}
 
 				case 'halloween':
@@ -1120,6 +1125,11 @@ class PlayState extends MusicBeatState
 		// REPOSITIONING PER STAGE
 		switch (curStage)
 		{
+			case 'woods':
+				gf.y += 20;
+				boyfriend.y += 20;
+				dad.y -= 30;
+				
 			case 'philly':
 				gf.x += 100;
 				boyfriend.x +=40;
