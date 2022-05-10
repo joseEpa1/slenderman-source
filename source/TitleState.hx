@@ -23,7 +23,9 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+#if newgrounds
 import io.newgrounds.NG;
+#end
 import lime.app.Application;
 import openfl.Assets;
 import Controls.KeyboardScheme;
@@ -85,18 +87,19 @@ class TitleState extends MusicBeatState
 	var thirteenSpr:FlxSprite;
 	var fourteenSpr:FlxSprite;
 
+	// nicoly drogada e noia
 	var wackyImage:FlxSprite;
 
 	override public function create():Void
 	{
 		#if polymod
-		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
+//		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
 		#end
 		
-		#if sys
+		/*#if sys
 		if (!sys.FileSystem.exists(Sys.getCwd() + "/assets/replays"))
 			sys.FileSystem.createDirectory(Sys.getCwd() + "/assets/replays");
-		#end
+		#end*/
 
 		@:privateAccess
 		{
@@ -246,10 +249,11 @@ class TitleState extends MusicBeatState
 		credTextShit.screenCenter();
 
 		// credTextShit.alignment = CENTER;
+		// niceeeeeeeeeeee
 
 		credTextShit.visible = false;
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
+		var ngSpr:FlxSprite = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
 		add(ngSpr);
 		ngSpr.visible = false;
 		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
@@ -257,7 +261,7 @@ class TitleState extends MusicBeatState
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = true;
 
-		oneSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/flamin"));
+		var oneSpr:FlxSprite = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/flamin"));
 		add(oneSpr);
 		oneSpr.visible = false;
 		oneSpr.setGraphicSize(Std.int(oneSpr.width * 0.8));
@@ -265,7 +269,7 @@ class TitleState extends MusicBeatState
 		oneSpr.screenCenter(X);
 		oneSpr.antialiasing = true;
 
-		twoSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/uan"));
+		var twoSpr:FlxSprite = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/uan"));
 		add(twoSpr);
 		twoSpr.visible = false;
 		twoSpr.setGraphicSize(Std.int(twoSpr.width * 0.8));
@@ -273,7 +277,7 @@ class TitleState extends MusicBeatState
 		twoSpr.screenCenter(X);
 		twoSpr.antialiasing = true;
 
-		threeSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/canon"));
+		var threeSpr:FlxSprite = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/canon"));
 		add(threeSpr);
 		threeSpr.visible = false;
 		threeSpr.setGraphicSize(Std.int(threeSpr.width * 0.8));
@@ -281,7 +285,7 @@ class TitleState extends MusicBeatState
 		threeSpr.screenCenter(X);
 		threeSpr.antialiasing = true;
 
-		fourSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/waw"));
+		var fourSpr:FlxSprite = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/waw"));
 		add(fourSpr);
 		fourSpr.visible = false;
 		fourSpr.setGraphicSize(Std.int(fourSpr.width * 0.8));
@@ -289,7 +293,7 @@ class TitleState extends MusicBeatState
 		fourSpr.screenCenter(X);
 		fourSpr.antialiasing = true;
 
-		fiveSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/spooky"));
+		var fiveSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image("sprs/intro/spooky"));
 		add(fiveSpr);
 		fiveSpr.visible = false;
 		fiveSpr.setGraphicSize(Std.int(fiveSpr.width * 0.8));
@@ -432,7 +436,7 @@ class TitleState extends MusicBeatState
 		#end
 
 		if (pressedEnter && !transitioning && skippedIntro)
-		{
+		{       #if newgrounds
 			#if !switch
 			NGio.unlockMedal(60960);
 
@@ -440,7 +444,7 @@ class TitleState extends MusicBeatState
 			if (Date.now().getDay() == 5)
 				NGio.unlockMedal(61034);
 			#end
-
+                        #end
 			logoStop = true;
 			FlxTween.tween(logoBl,{y: 200}, 0.8, {ease: FlxEase.expoInOut});
 			FlxTween.angle(logoBl, logoBl.angle, 180, 0.8, {ease: FlxEase.quartInOut});
