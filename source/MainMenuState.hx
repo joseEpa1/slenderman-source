@@ -16,7 +16,9 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+#if newgrounds
 import io.newgrounds.NG;
+#end
 import lime.app.Application;
 
 #if windows
@@ -187,7 +189,11 @@ class MainMenuState extends MusicBeatState
 				});
 			});
 		}
-
+		
+                #if mobileC
+		addVirtualPad(FULL, A_B);
+		#end
+			
 		super.create();
 	}
 
